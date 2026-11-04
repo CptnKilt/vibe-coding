@@ -6,7 +6,7 @@
 
 _Where does it look like a toy? Where would a VP of Design refuse to open it? Where does the logic feel fake? Pick the one spot that costs you the most credibility._
 
-_____
+The gap is widening.
 
 ## Upgrade paths run (pick two)
 
@@ -17,12 +17,15 @@ _____
 
 ## v2 build
 
-- **v2 shareable link:** _____
+- **Shareable link:** _____
 - **Before → after:** _____
-- **What each pass changed:** _____
+- **What each pass changed:**
+  - _____
 
 ## Show & Swap read, round 2
 
 _A NEW partner, a blind read. What landed differently from v1?_
 
-_____
+- **Feels like a real product, or a mockup?** It feels like a real product
+- **Where interactivity fell short:** The changes fix the issue found. It looks good as of now
+- **Would they show it to a VP?** Yes, I would. The dash board it showing a problem that exists and is giving feeddback on were to go look.
