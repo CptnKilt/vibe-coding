@@ -12,15 +12,15 @@ The gap is widening.
 
 - [ ] Design Match
 - [ ] Add Interactivity
-- [ ] Surgical Refinement
+- [x] Surgical Refinement
 - [ ] Existing Product Track
 
 ## v2 build
 
-- **Shareable link:** _____
-- **Before → after:** _____
+- **Shareable link:** https://signal-dashboard-nov04.shadyteal19.chatgpt.site
+- **Before → after:** Before it only showed a line graph that gave a percentage on the left. I added a drop down to show 7, 14, and 30 days and a time slide to show the daily percentage and actual numbers for reference.
 - **What each pass changed:**
-  - _____
+  - Surgical Refinement: I modified the gap is widening section to give a little more interactivity.
 
 ## Show & Swap read, round 2
 
