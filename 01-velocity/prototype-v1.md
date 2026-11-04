@@ -27,7 +27,7 @@ _Tick the scenario you built in Lab 1 (the same one you selected in the lab guid
 
 _What a partner understood from your build with no verbal setup, their reaction is your first piece of product evidence._
 
-- **What they understood immediately:** The page is showing the users what their potential next move is.
+- **What they understood immediately:** The page is showing the users where that they are having a issue with mobil orders reaching completion and what their potential next move is.
 - **What confused them:** The confusion came in the gap is widening as it didn't provide full context.
 - **The assumption they thought you were testing:** The lose of orders from the mobil platform
 - **The gap between what you intended and what they read:** I think it gave me the information I requested
