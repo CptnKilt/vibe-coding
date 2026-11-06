@@ -9,7 +9,7 @@ The site is suppose to show the modified dahboard and the hypothesis test the th
 
 ## What my partner understood (in their words)
 
-My partner (Rohit) understood what the dashboard was about what the biggest problem in the company is at this moment and stated the information provided not only the problem but list of actionable items.
+My partner (Rohit) understood what the dashboard was about what the biggest problem in the company is at this moment and stated the information provided not only the problem but a list of actionable items.
 
 ## Where they got confused / pushed back
 
