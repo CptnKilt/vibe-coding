@@ -1,49 +1,36 @@
-# PROMPTS.md: Living Prompt Pack
+# Prototype (v3): The Build That Tests the Hypothesis
 
-> Module 3 · Prompt Chaining. Re-architect the build with prompt chains; capture the reusable ones here.
+> Module 2 · Validation. The prototype is a hypothesis test, not a demo.
 
-## How to use this pack
+## Link
 
-_Each prompt is a reusable step. Chain them: the output of one becomes the input to the next._
+C:/Users/david/OneDrive/Documents/ChatGPT/Vibe Coding - Insights/dist/index.html
 
-## Prompt chain: Checkout Insight to Action
+## What it tests
 
-### Step 1: Expand: add the two missing screens
-```
-Build the next phase of this app in a strict sequence:
-1. Add a screen "Checkout Diagnostics". Match the layout and spacing of the attached Mixpanel screenshot.
-2. Add a screen "Action Tracker". Match the data density of the attached Asana screenshot.
-3. Navigation: write the logic so Checkout Diagnostics links to Action Tracker.
+_Tie it back to the validation brief: which assumption does this prototype put in front of a user?_
 
-Build these in order so Checkout Diagnostics is the anchor for Action Tracker.
-```
+It tests whether leading with one headline metric, a plain-language takeaway, and one recommended action helps decision-makers act instead of leaving.
 
-### Step 2: Behavior: handle loading, empty and error states
-```
-Apply the following logic constraints to the Checkout Diagnostics flow:
-- Use skeleton screens for the A checkout funnel with counts and drop-off rates at each step. Clicking a step reveals the browser and payment-method breakdown. loading state.
-- If no data is present, show the empty state: "No activity found. Please refresh the dashboard.".
-- On fetch failure, trigger the error state: "Connection lost. Please refresh the dashboard.".
+The user sees the 42% trial activation rate, learns that most trial users leave setup unfinished, and can click Investigate trial setup drop-off. The assumption is that this gives them enough context to take the first step. A lower bounce rate and more clicks on the recommended action would support that assumption.
 
-Maintain the same design language throughout and tether all behavior strictly to these rules.
-```
+## Context injected (no placeholders)
 
-### Step 3: Refine: polish one thing on one screen
-```
-The Overview needs a professional Mixpanel polish.
-1. Start by listing the 3 biggest gaps in typography and spacing compared to Checkout Diagnostics.
-2. Once you've identified those, resize the headers and remove teh dropdown in the upper right corner. Have all the number change from the dropdown in the Gap is Widening section
+- **Real user quotes on screen:** “I open it, see twelve charts, and have no idea which one I'm supposed to act on. So I close it.” Marketing manager
 
-Don't change anything else in the project or touch the underlying logic.
-```
+“It tells me what happened but never what to do about it. I still export to a spreadsheet to think.” Product lead
 
-## Reusable techniques learned
+“The number I need is in there, but it takes six clicks and three filters to find it.” Growth analyst
+- **Domain metrics on screen:** Bounce rate | 60% | Sessions under 15 seconds with no interaction.
 
-- _____
-- _____
+Most-requested metric | 6 clicks | To reach the most-requested metric.
 
-## What broke (and the fix)
+Default landing view | 12 | Charts on the default landing view.
 
-_Where a single mega-prompt failed and chaining fixed it._
+## Iteration log (v1 → v3)
 
-_____
+| Version | Change | Why |
+|---|---|---|
+| v1 | Priority badge | Changed to an expanadable message box to explain why the insight has the priority it does |
+| v2 | Design modification | Modified the design to make it a little easier to look through |
+| v3 | Added Admin page | Added an Admin page to provide information on why the dashboard is being modified |
