@@ -35,8 +35,6 @@ If a guided headline + action still bounces, the metric itself may be wrong, piv
   - 60%, Bounce rate: sessions under 15s with no interaction.
   - 6 clicks, To reach the most-requested metric.
   - 12, Charts on the default landing view.
-  - 74%, Users who export to a spreadsheet to actually analyse.
-  - 1.3, Avg. weekly sessions / active user.
 - **User voice (verbatim quotes):**
   - "I open it, see twelve charts, and have no idea which one I'm supposed to act on. So I close it.", Marketing manager
   - "It tells me *what* happened but never *what to do about it*. I still export to a spreadsheet to think.", Product lead
