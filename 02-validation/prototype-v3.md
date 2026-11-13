@@ -4,29 +4,33 @@
 
 ## Link
 
-_____
+C:/Users/david/OneDrive/Documents/ChatGPT/Vibe Coding - Insights/dist/index.html
 
 ## What it tests
 
 _Tie it back to the validation brief: which assumption does this prototype put in front of a user?_
 
-The data is all there, but users can't find the insight, so they bounce.
+It tests whether leading with one headline metric, a plain-language takeaway, and one recommended action helps decision-makers act instead of leaving.
+
+The user sees the 42% trial activation rate, learns that most trial users leave setup unfinished, and can click Investigate trial setup drop-off. The assumption is that this gives them enough context to take the first step. A lower bounce rate and more clicks on the recommended action would support that assumption.
 
 ## Context injected (no placeholders)
 
-- **Real user quotes on screen:** “I open it, see twelve charts, and have no idea which one I'm supposed to act on. So I close it.”
+- **Real user quotes on screen:** “I open it, see twelve charts, and have no idea which one I'm supposed to act on. So I close it.” Marketing manager
 
-“The number I need is in there, but it takes six clicks and three filters to find it.”
-- **Domain metrics on screen:** 60% Bounce rate: sessions under 15s with no interaction.
+“It tells me what happened but never what to do about it. I still export to a spreadsheet to think.” Product lead
 
-12 Charts on the default landing view.
+“The number I need is in there, but it takes six clicks and three filters to find it.” Growth analyst
+- **Domain metrics on screen:** Bounce rate | 60% | Sessions under 15 seconds with no interaction.
 
-6 clicks To reach the most-requested metric.
+Most-requested metric | 6 clicks | To reach the most-requested metric.
+
+Default landing view | 12 | Charts on the default landing view.
 
 ## Iteration log (v1 → v3)
 
 | Version | Change | Why |
 |---|---|---|
-| v1 | Modified the dashboard to keep the original layout and add the hypothesis | The first change removed the analitical information and changed everything to the hypothesis only. |
-| v2 | Moved the hypothesis to the top | To make the hypothesis testing information more visible |
-| v3 | _____ | _____ |
+| v1 | Priority badge | Changed to an expanadable message box to explain why the insight has the priority it does |
+| v2 | Design modification | Modified the design to make it a little easier to look through |
+| v3 | Added Admin page | Added an Admin page to provide information on why the dashboard is being modified |
