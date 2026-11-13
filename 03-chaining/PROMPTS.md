@@ -1,36 +1,49 @@
-# Prototype (v3): The Build That Tests the Hypothesis
+# PROMPTS.md: Living Prompt Pack
 
-> Module 2 · Validation. The prototype is a hypothesis test, not a demo.
+> Module 3 · Prompt Chaining. Re-architect the build with prompt chains; capture the reusable ones here.
 
-## Link
+## How to use this pack
 
-C:/Users/david/OneDrive/Documents/ChatGPT/Vibe Coding - Insights/dist/index.html
+_Each prompt is a reusable step. Chain them: the output of one becomes the input to the next._
 
-## What it tests
+## Prompt chain: Checkout Insight to Action
 
-_Tie it back to the validation brief: which assumption does this prototype put in front of a user?_
+### Step 1: Expand: add the two missing screens
+```
+Build the next phase of this app in a strict sequence:
+1. Add a screen "Trial setup drop-off breakdown". Match the layout and spacing of the attached funnel drill-down screenshot.
+2. Add a screen "Experiment decision screen in Admin". Match the data density of the attached experiment scorecard screenshot.
+3. Navigation: write the logic so Trial setup drop-off breakdown links to Experiment decision screen in Admin.
 
-It tests whether leading with one headline metric, a plain-language takeaway, and one recommended action helps decision-makers act instead of leaving.
+Build these in order so Trial setup drop-off breakdown is the anchor for Experiment decision screen in Admin.
+```
 
-The user sees the 42% trial activation rate, learns that most trial users leave setup unfinished, and can click Investigate trial setup drop-off. The assumption is that this gives them enough context to take the first step. A lower bounce rate and more clicks on the recommended action would support that assumption.
+### Step 2: Behavior: handle loading, empty and error states
+```
+Apply the following logic constraints to the Trial setup drop-off breakdown flow:
+- Use skeleton screens for the It shows a list of funnel stages and a comparison table by signup channel. loading state.
+- If no data is present, show the empty state: "No trial setup data for this signup channel yet. Try another channel or check back after more trials have started.".
+- On fetch failure, trigger the error state: "We couldn’t load the trial setup breakdown. Try again.".
 
-## Context injected (no placeholders)
+Maintain the same design language throughout and tether all behavior strictly to these rules.
+```
 
-- **Real user quotes on screen:** “I open it, see twelve charts, and have no idea which one I'm supposed to act on. So I close it.” Marketing manager
+### Step 3: Refine: polish one thing on one screen
+```
+The Experiment decision screen in Admin looks least finished. Before the pilot reaches 20 sessions, the progress ring and two metric cards mostly repeat how little data there is.
 
-“It tells me what happened but never what to do about it. I still export to a spreadsheet to think.” Product lead
+I’d replace the ring with one prominent status line: “Collect more sessions · 8 of 20 complete · 12 to go.” That gives the reviewer the decision and the next step at a glance.
 
-“The number I need is in there, but it takes six clicks and three filters to find it.” Growth analyst
-- **Domain metrics on screen:** Bounce rate | 60% | Sessions under 15 seconds with no interaction.
+Don't change anything else in the project or touch the underlying logic.
+```
 
-Most-requested metric | 6 clicks | To reach the most-requested metric.
+## Reusable techniques learned
 
-Default landing view | 12 | Charts on the default landing view.
+- _____
+- _____
 
-## Iteration log (v1 → v3)
+## What broke (and the fix)
 
-| Version | Change | Why |
-|---|---|---|
-| v1 | Priority badge | Changed to an expanadable message box to explain why the insight has the priority it does |
-| v2 | Design modification | Modified the design to make it a little easier to look through |
-| v3 | Added Admin page | Added an Admin page to provide information on why the dashboard is being modified |
+_Where a single mega-prompt failed and chaining fixed it._
+
+_____
