@@ -10,7 +10,7 @@ Path C focus — “Priority 1 of 5” has no visible rationale.
 
 ## Upgrade paths run (pick two)
 
-- [ ] Design Match
+- [x] Design Match
 - [ ] Add Interactivity
 - [x] Surgical Refinement
 - [ ] Existing Product Track
@@ -20,6 +20,7 @@ Path C focus — “Priority 1 of 5” has no visible rationale.
 - **Shareable link:** C:/Users/david/OneDrive/Documents/ChatGPT/Vibe Coding - Insights/dist/index.html
 - **Before → after:** The Priority #1 was changed to a dropdown that provided an explaintion why this insight was ranked as number 1.
 - **What each pass changed:**
+  - Design Match: I'm uploading a screenshot of a design I want to match. Update my app's colors, spacing, border radius, and typography to match this reference exactly, keep the existing layout and flow. Sent beehiiv Web 193.png from Mobbin for referece.
   - Surgical Refinement: I need to change the “Priority 1 of 5” badge into an expandable “Why this is priority #1” panel and put it next to the headline metric, where the stakeholder first sees the recommendation.
 
 Focus only on the top insight’s ranking in Gaps & Resolutions. Replace the “Priority 1 of 5” badge with an expandable “Why this is priority #1” panel. Put it directly below the 42% trial activation metric on the Start page, and show the same explanation on the insight detail page.
