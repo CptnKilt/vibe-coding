@@ -19,15 +19,15 @@ _Tick the scenario you built in Lab 1 (the same one you selected in the lab guid
 
 ## The build
 
-- **What I built:** Build me an analytics dashboard that surfaces the single most important insight first. Include one headline metric with a plain-language takeaway and a clear recommended next action.
-- **Tool used:** ChatGPT
-- **Shareable link:** https://signal-dashboard-nov04.shadyteal19.chatgpt.site
+- **What I built:** Build me an analytics dashboard that surfaces the single most important insight first. Include one headline metric with a plain-language takeaway and a clear recommended next action. There should be at least three pages to this dashboard and one page should reference all the insights that are found. The first page should have the highlighted reference first but also list the next 3 insights in level of importance as well.  Give the headline metric a line chart that provides data over the time periods of 1, 2, 4, 6, and 8 weeks. Make the chart interactive so when a hover over it the data will show for that period  I want to change the name to Insights / Analytics  I would like to be able to look at the trend information for each insight on the trends page, but I only want the trend information shown from the insight chosen. I.E. If I choose to view the trend from insight four, I only see insight four trend information.
+- **Tool used:** Codex
+- **Shareable link:** https://signal-analytics-brief.shadyteal19.chatgpt.site
 
 ## Show & Swap read
 
 _What a partner understood from your build with no verbal setup, their reaction is your first piece of product evidence._
 
-- **What they understood immediately:** The page is showing the users where that they are having a issue with mobile orders reaching completion and what their potential next move is.
-- **What confused them:** The confusion came in the gap is widening as it didn't provide full context.
-- **The assumption they thought you were testing:** The lose of orders from the mobile platform
-- **The gap between what you intended and what they read:** I think it gave me the information I requested
+- **What they understood immediately:** Based on Dashboard splash bar, I did not readily understand what the intent of the dashboard was. When I started reading the next level of detail and clicking around, I understood the information to be very helpful. Need tuning on WHY I am here.
+- **What confused them:** Naming convention on how to navigate back from Trend to Evidence. I was expecting the Trend link to show me more, but it returned me to where I stared. This was okay, but felt it could be clearer that I was clicking a 'return' action.
+- **The assumption they thought you were testing:** I assume it is intending to identify and supply guided recommendation on how to improve low adoption at onboarding.
+- **The gap between what you intended and what they read:** Because I was asking Codex to build something with sample data and not knowing what was going to be built. I can understand the confusion my partner had. It didn't help that I had an Enterprise Business Architect from a fortune 500 company looking at the prototype.
