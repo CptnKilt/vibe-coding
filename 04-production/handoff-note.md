@@ -6,36 +6,33 @@
 
 _One paragraph an engineer can read in 60 seconds._
 
-Signal M3 is a static prototype for The Dashboard Nobody Reads. It tests whether giving decision makers one headline metric, a plain-language takeaway, and a recommended action helps them act sooner. Overview highlights mobile checkout completion. Checkout Diagnostics lets users examine drop-off by funnel step, browser, and payment method. Action Tracker carries that finding forward so users can record an owner, next step, and follow-up rate. The refactored workspace source lives under src/features/. Checkout data is illustrative, while filtering, navigation, local action saves, and facilitator event export work in the browser. The reported 60% bounce rate is a research baseline. The prototype has yet to establish an improvement against a control. Serve src/ over localhost to run the refactor. The public site serves the existing dist/ build.
+Insights / Analytics is a static browser prototype that tests whether one headline metric, a plain-language takeaway, and one recommended action help decision-makers start investigating before they leave. **Start → Investigate trial setup drop-off → Experiment decision screen in Admin** is the main pilot path. The dashboard’s issue metrics and funnel counts are illustrative. The app records actual clicks and bounce outcomes in the current browser, where repeat visits and internal walkthroughs can count as sessions. The Admin scorecard recommends collecting more sessions until 20 are complete, then applies proposed bounce and click thresholds. Open `dist/index.html` with the full `dist` folder in place. There’s no install or build step.
 
 ## Architecture (plain language)
 
-- **Frontend:** Static HTML, CSS, and native JavaScript modules. src/index.html routes to Overview. The three feature folders contain named screens and their interaction code.
-- **Backend / data:** A static server serves the files. Overview calculates metrics from its own sample series in overview-data.js. Diagnostics and Tracker share a JSON fixture and funnel calculations under src/shared/checkout/. Actions and facilitator events use browser storage.
-- **Key flows:** Start a session on Overview, observe interactions, end the session, and export JSON. Events capture session start, first interaction, recommended-action clicks, and session end with duration and bounce status.
+- **Frontend:** `dist/index.html` loads shared CSS and feature scripts in order. `dist/dashboard.js` reads the URL fragment and renders the corresponding screen. Feature folders under `dist/features` hold Start, Insights, Trends, Trial Setup, and Admin. Classic scripts support direct opening from disk. Their shared names make script order significant.
+- **Backend / data:** The app runs entirely in the browser. Insights use embedded sample series. The funnel fetches an embedded JSON response, validates stage counts, and aggregates channels. Admin reads completed session outcomes from browser storage.
+- **Key flows:** | Investigation flow | Start links to the funnel, which provides a signup-channel filter, a channel comparison, and the largest drop-off by count. The funnel links to the Admin scorecard with the current channel in the URL. The return link restores that channel. |
+| Insight flow | All Insights links to individual details and trends. The Trends selector displays one insight at a time, and its back link returns to that insight’s details. |
+| Measurement flow | A session starts when Start is visible and ends when the tab hides or closes, or Admin opens. A bounce is a session under 15 seconds without a click or control change. Only the Start CTA counts toward the recommended-action rate, once per completed session. Both rates use completed sessions as the denominator.
 
 ## What's solid vs. what's duct tape
 
 | Area | State | Notes |
 |---|---|---|
-| Feature folders and screen names match the PRD. Overview calculations and action persistence have dedicated module. Diagnostics and Tracker use the same funnel module and can recreate a finding from the URL. Diagnostics has loading, empty, and error states. Actions can be saved and reopened in the same browser. Facilitators can export recorded session events. | solid | _____ |
-| Overview still handles facilitator event collection and chart rendering in the same screen script. Overview uses a separate sample series. Its 14-day totals differ from the Diagnostics fixture. Actions and events are browser-local. The tracker is an individual follow-up form. Session capture is limited to Overview, with best-effort recording on page exit. | rough | _____ |
+| The core screens have direct routes. | solid | The funnel presents skeletons during loading and distinct empty and error states. Retry keeps the selected channel. Scripted checks exercised screen routing, funnel loading states, and the scorecard’s decision boundaries. The local build was also reviewed in Codex. |
+| The funnel’s apparent fetch reads an embedded fixture. | rough | Admin is a navigation label with no access control. Session results live in browser storage with no participant identity or shared reporting, and saving is best effort. The scorecard displays a recommendation with no automatic enforcement. |
 
 ## Risks & assumptions for the team
 
-- Measurement. The working bounce definition is a session under 15 seconds with no recorded interaction. A Review Action Plan click measures interest. It does not measure task completion, Diagnostics usage, or a saved follow-up. A comparison dashboard and consistent starting point are needed to test the hypothesis.
-- Data consistency. Production needs a common source for counts, periods, and funnel definitions. A saved finding is keyed by its filters and recomputed when reopened, so replacing the fixture could change the evidence displayed beside an existing action.
-- Persistence. Saved actions and events are tied to the browser and origin. Different ports, private browsing, or clearing site data can make prior records unavailable.
-- Deployment. The published site serves dist/. The refactor is in src/, so publishing the refactor requires a deliberate update to the deployment.
+- **Pilot evidence.** Browser-local counts can mix repeat sessions and walkthroughs. The reported 60% bounce baseline came from the exercise, and the original action-click baseline is unavailable. The pilot measures intent to investigate. A controlled comparison with identified participant sessions is needed to assess improvement.
+- **Stopping rule.** The proposed review point is 20 completed sessions. At that point, bounce above 50% or action clicks below 25% produces **Stop and revise the prototype**. Meeting both targets produces **Continue to a controlled test**. Confirm those thresholds with the pilot owner before using the scorecard to make a decision.
+- **Decision data.** Rankings are provisional. Production use requires agreed metric definitions, real funnel counts, and evidence about the likely impact of fixing each issue.
 
 ## How to run it
 
 ```
-Open a terminal at the Signal-M3 project root. With Python 3 installed, run:
-
-python -m http.server 8000 --bind 127.0.0.1 --directory src
-
-On Windows, use py -3 in place of python if that is how Python is installed. Open http://localhost:8000/ in a current browser. The local server gives the JavaScript modules and JSON request an HTTP origin. No npm install, build step, or API key is required.
-
-To smoke-test the flow, change the Overview period, open Diagnostics, choose a funnel step, and send it to Action Tracker. Save an action and reload the tracker to check that the fields return. To check instrumentation, start a participant session on Overview, click Review Action Plan, end the session, and download the event JSON.
+1. Open `dist/index.html` in a browser. Keep `dashboard.css`, `dashboard.js`, and the `features` folders alongside it.
+2. On **Start**, choose **Investigate trial setup drop-off**, select a signup channel, and open **Experiment decision screen in Admin**. Use the return link to verify the channel selection is restored.
+3. For an HTTP preview, run `python -m http.server 8765 --bind 127.0.0.1 --directory dist` from the project root, then open `http://127.0.0.1:8765/` in a browser on the same machine. Use the same browser and URL for a consistent set of local pilot results.
 ```
