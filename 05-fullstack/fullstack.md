@@ -6,7 +6,7 @@
 
 _The working, shareable link that survives real users._
 
-_____
+file:///C:/Users/david/OneDrive/Documents/ChatGPT/Vibe%20Coding%20-%20Insights/dist/index.html#overview
 
 ## Data schema
 
@@ -33,4 +33,6 @@ Users sign in to Admin and can view or edit only their own invite records. Once 
 
 _What you threw at it, and what held / broke._
 
-_____
+I did the offline test and initially got an erronius error message that was not meaning full. I updated the site to show that is the site is offline it will state that the site is offline and to try again later.
+
+I also used the Spam Click test trying to quickly add the same email several times in a row. I got the excepted error message of "Couldn’t create the account. Check your email and password, or sign in if you already have an account."
