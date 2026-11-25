@@ -10,11 +10,11 @@ Scenario 04 · The Dashboard Nobody Reads
 
 _The one belief that, if false, sinks the idea._
 
-The data is all there, but users can't find the insight, so they bounce.
+Users will trust and act on one prioritized insight and its recommended next step enough to stop searching through charts or exporting data to spreadsheets.
 
 ## Hypothesis
 
-> We believe **a first screen that leads with one headline metric, a plain-language takeaway, and one recommended action** will cause **users act on the dashboard instead of bouncing** for **the people who should make decisions from it**. We'll know we're right when **bounce rate drops and the recommended action gets clicked**.
+> We believe **a one headline metric, its plain-language takeaway, and a recommended next action** will cause **the users to find and act on the most relevant metric faster, with less need to search through filters or export data** for **marketing managers, growth analysts, and product leads**. We'll know we're right when **users reach the most-requested metric in 2 clicks or fewer, down from 6, and spreadsheet exports fall below 50%, down from 74%. These are proposed targets to validate**.
 
 ## Risk type
 
@@ -27,16 +27,16 @@ The data is all there, but users can't find the insight, so they bounce.
 
 _The result that would make you stop or pivot._
 
-If a guided headline + action still bounces, the metric itself may be wrong, pivot.
+If spreadsheet exports remain at or above the 74% baseline after a representative pilot, stop or pivot—the insight-first layout isn’t reducing the core friction.
 
 ## The three ingredients
 
 - **Real data (domain metrics):**
-  - 60%, Bounce rate: sessions under 15s with no interaction.
-  - 6 clicks, To reach the most-requested metric.
   - 12, Charts on the default landing view.
+  - 6 clicks, To reach the most-requested metric.
+  - 74%, Users who export to a spreadsheet to actually analyse.
 - **User voice (verbatim quotes):**
   - "I open it, see twelve charts, and have no idea which one I'm supposed to act on. So I close it.", Marketing manager
-  - "It tells me *what* happened but never *what to do about it*. I still export to a spreadsheet to think.", Product lead
   - "The number I need is in there, but it takes six clicks and three filters to find it.", Growth analyst
+  - "It tells me *what* happened but never *what to do about it*. I still export to a spreadsheet to think.", Product lead
 - **Hypothesis (above):** ✓
