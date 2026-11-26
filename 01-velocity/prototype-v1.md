@@ -6,10 +6,10 @@
 
 _Tick the scenario you built in Lab 1 (the same one you selected in the lab guide), or name your own._
 
-- [ ] Scenario 01 · The Retention Engine
+- [x] Scenario 01 · The Retention Engine
 - [ ] Scenario 02 · The Internal Tool Nobody Uses
 - [ ] Scenario 03 · The Marketplace Trust Problem
-- [x] Scenario 04 · The Dashboard Nobody Reads
+- [ ] Scenario 04 · The Dashboard Nobody Reads
 - [ ] My own (instructor-approved): _____
 
 ## Launch path
@@ -19,15 +19,15 @@ _Tick the scenario you built in Lab 1 (the same one you selected in the lab guid
 
 ## The build
 
-- **What I built:** Build me an analytics dashboard that surfaces the single most important insight first. Include one headline metric with a plain-language takeaway and a clear recommended next action.
+- **What I built:** Build me a dashboard that shows why B2B SaaS customers churn in their first 90 days. Include a list of at-risk accounts ranked by a health score, and a chart of the top churn drivers.
 - **Tool used:** ChatGPT
-- **Shareable link:** https://chatgpt.com/library/share/libfile_b1d80e04dd988191b3641a27e8cad3fb?account_id=personal
+- **Shareable link:** https://chatgpt.com/library/share/libfile_2d29c92c308481918f8856644a015b05?account_id=personal
 
 ## Show & Swap read
 
 _What a partner understood from your build with no verbal setup, their reaction is your first piece of product evidence._
 
-- **What they understood immediately:** It’s meant to help someone quickly see what needs attention in their website analytics. The dashboard leads with a high bounce rate, explains what that means in plain language, and suggests a next step.
-- **What confused them:** I wasn’t sure what kind of website or visitors the sample numbers represent, so I couldn’t tell whether a 62% bounce rate is especially concerning here. The date-range buttons also appear to change the metrics, but the chart itself stays the same, which made me wonder whether the ranges are fully connected.
-- **The assumption they thought you were testing:** That people can understand and act on their analytics more easily when the dashboard puts one important insight and a recommended action first, instead of asking them to interpret a collection of charts on their own.
-- **The gap between what you intended and what they read:** I intended the dashboard to make the most important issue obvious and help users decide what to do next. My coworker understood that purpose, so the main message came through. The gap is that I assumed the sample metric would feel meaningful on its own; without context about the website or a benchmark, they couldn’t judge how serious it was. The date filters also suggested the chart would update, but it didn’t, making the prototype feel less complete than I intended.
+- **What they understood immediately:** It’s a customer success dashboard for spotting B2B SaaS accounts that may churn in their first 90 days. It shows how common early churn is, what reasons appear most often, and which accounts may need attention first.
+- **What confused them:** I couldn’t tell how the health score is calculated or what signals affect it. The dashboard says 12 accounts are at risk, while the table shows only six at a time; I wasn’t sure whether the rest were on another page or excluded by the sample data. The chart’s “target” line also has no target value.
+- **The assumption they thought you were testing:** That early churn can be anticipated from measurable signals—such as slow onboarding, low adoption, missing integrations, and unresolved support issues—and that ranking accounts by health score helps customer success teams decide who to contact first.
+- **The gap between what you intended and what they read:** I intended this to be an early-warning tool that helps customer success teams understand why new customers churn and which accounts to contact first. The purpose came through, but the prototype didn’t explain how the health scores were calculated or resolve questions about the account count and trend target. The gap is that people could see what was happening, but didn’t yet know why to trust the ranking or what to do next.
