@@ -4,22 +4,22 @@
 
 ## Scenario
 
-Scenario 04 · The Dashboard Nobody Reads
+Scenario 01 · The Retention Engine
 
 ## Riskiest assumption
 
 _The one belief that, if false, sinks the idea._
 
-Users will trust and act on one prioritized insight and its recommended next step enough to stop searching through charts or exporting data to spreadsheets.
+New accounts never reach first value in week one, so they churn before they see the point.
 
 ## Hypothesis
 
-> We believe **a one headline metric, its plain-language takeaway, and a recommended next action** will cause **the users to find and act on the most relevant metric faster, with less need to search through filters or export data** for **marketing managers, growth analysts, and product leads**. We'll know we're right when **users reach the most-requested metric in 2 clicks or fewer, down from 6, and spreadsheet exports fall below 50%, down from 74%. These are proposed targets to validate**.
+> We believe **a guided week-one activation path that surfaces the core "aha" action** will cause **more new accounts reaching first value and staying past 90 days** for **new B2B SaaS accounts**. We'll know we're right when **week-one activation rises above 40% and 90-day churn drops**.
 
 ## Risk type
 
-- [ ] Value (do they want it?)
-- [x] Usability (can they use it?)
+- [x] Value (do they want it?)
+- [ ] Usability (can they use it?)
 - [ ] Feasibility (can we build it?)
 - [ ] Viability (should we?)
 
@@ -27,16 +27,15 @@ Users will trust and act on one prioritized insight and its recommended next ste
 
 _The result that would make you stop or pivot._
 
-If spreadsheet exports remain at or above the 74% baseline after a representative pilot, stop or pivot—the insight-first layout isn’t reducing the core friction.
+If guiding the first action doesn't move activation, onboarding isn't the real problem, pivot.
 
 ## The three ingredients
 
 - **Real data (domain metrics):**
-  - 12, Charts on the default landing view.
-  - 6 clicks, To reach the most-requested metric.
-  - 74%, Users who export to a spreadsheet to actually analyse.
+  - 30%, 90-day churn: share of new accounts gone within 3 months.
+  - 1.4, Seats active / account: adoption rarely spreads past the buyer.
+  - 22%, Activation rate: reach the "aha" action in week one.
 - **User voice (verbatim quotes):**
-  - "I open it, see twelve charts, and have no idea which one I'm supposed to act on. So I close it.", Marketing manager
-  - "The number I need is in there, but it takes six clicks and three filters to find it.", Growth analyst
-  - "It tells me *what* happened but never *what to do about it*. I still export to a spreadsheet to think.", Product lead
+  - "I signed up, poked around for ten minutes, and never figured out what it actually did for my team.", Ops lead, churned day 12
+  - "Nobody on my team adopted it, so I stopped logging in. It felt like one more tool to babysit.", Eng manager, churned day 47
 - **Hypothesis (above):** ✓
