@@ -4,33 +4,23 @@
 
 ## Link
 
-C:/Users/david/OneDrive/Documents/ChatGPT/Vibe Coding - Insights/dist/index.html
+https://acme-retention.lovable.app
 
 ## What it tests
 
 _Tie it back to the validation brief: which assumption does this prototype put in front of a user?_
 
-It tests whether leading with one headline metric, a plain-language takeaway, and one recommended action helps decision-makers act instead of leaving.
-
-The user sees the 42% trial activation rate, learns that most trial users leave setup unfinished, and can click Investigate trial setup drop-off. The assumption is that this gives them enough context to take the first step. A lower bounce rate and more clicks on the recommended action would support that assumption.
+The Activation prototype tests whether a guided first-week path helps a new account reach a team-level “aha” moment instead of signing up, exploring aimlessly, and leaving.
 
 ## Context injected (no placeholders)
 
-- **Real user quotes on screen:** “I open it, see twelve charts, and have no idea which one I'm supposed to act on. So I close it.” Marketing manager
-
-“It tells me what happened but never what to do about it. I still export to a spreadsheet to think.” Product lead
-
-“The number I need is in there, but it takes six clicks and three filters to find it.” Growth analyst
-- **Domain metrics on screen:** Bounce rate | 60% | Sessions under 15 seconds with no interaction.
-
-Most-requested metric | 6 clicks | To reach the most-requested metric.
-
-Default landing view | 12 | Charts on the default landing view.
+- **Real user quotes on screen:** “I signed up, poked around for ten minutes, and never figured out what it actually did for my team.” / “Nobody on my team adopted it, so I stopped logging in. It felt like one more tool to babysit.”
+- **Domain metrics on screen:** 30% 90-day churn: share of new accounts gone within 3 months. / 22% Activation rate: reach the "aha" action in week one. / 1.4 Seats active / account: adoption rarely spreads past the buyer.
 
 ## Iteration log (v1 → v3)
 
 | Version | Change | Why |
 |---|---|---|
-| v1 | Priority badge | Changed to an expanadable message box to explain why the insight has the priority it does |
-| v2 | Design modification | Modified the design to make it a little easier to look through |
-| v3 | Added Admin page | Added an Admin page to provide information on why the dashboard is being modified |
+| v1 | Make the plan-sharing step show a clear success state: name the teammate and the first action they now own. | That would make the “aha” feel like a real team outcome, not just a completed form. |
+| v2 | Make the activation success state depend on the teammate claiming or completing their first assigned action, not just the plan being shared. | Right now, a new account can count as activated after entering a teammate’s name and sharing a simulated plan. Requiring the teammate to engage would test whether the flow solves the “nobody on my team adopted it” problem, and make the activation readout a stronger signal. |
+| v3 | Remove the auto claim of the task | Right now, Casey claims it automatically after a short wait, so the flow moves to “Activated” without the tester deciding whether the teammate actually engages. A no-response choice would let you see whether the product handles the adoption problem that the Eng manager described—and whether users still find value when the handoff stalls. |
