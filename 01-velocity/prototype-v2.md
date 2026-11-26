@@ -6,7 +6,7 @@
 
 _Where does it look like a toy? Where would a VP of Design refuse to open it? Where does the logic feel fake? Pick the one spot that costs you the most credibility._
 
-“Accounts needing attention” and its health-score ranking
+Account Health breakdown
 
 ## Upgrade paths run (pick two)
 
@@ -17,16 +17,16 @@ _Where does it look like a toy? Where would a VP of Design refuse to open it? Wh
 
 ## v2 build
 
-- **Shareable link:** https://chatgpt.com/library/share/libfile_2d29c92c308481918f8856644a015b05?account_id=personal
-- **Before → after:** Before: Opaque health scores and only six visible accounts → After: Evidence-backed rankings for all 12 accounts across two pages.
+- **Shareable link:** https://acme-retention.lovable.app/
+- **Before → after:** Before → after: the account panel only showed a fixed recommended next step → managers can now enter today's signals and activity notes and get an AI-written retention plan where every action cites the evidence behind it.
 - **What each pass changed:**
   - Add Interactivity: Make the at-risk accounts list filterable by risk level. When I click an account, open a side panel showing that account's health score, its top churn reason, and its recent activity.
-  - Surgical Refinement: Focus only on “Accounts needing attention” and its health-score ranking. Provide the information to support each accounts ranking position. Also provide the information on page two so we are able to see all the accounts.
+  - Surgical Refinement: Focus only on Account Health breakdown. We need to show where the signals come from or why the thresholds are trustworthy
 
 ## Show & Swap read, round 2
 
 _A NEW partner, a blind read. What landed differently from v1?_
 
-- **Feels like a real product, or a mockup?** It feels like a polished visual mockup. The layout and account workflow are believable, but the data and account activity are illustrative, so I can’t tell how it would behave with real customer information.
-- **Where interactivity fell short:** The account search, risk filter, pagination, and detail panel cover the basic workflow. I’d expect the charts and date range to respond to my selections, and the account evidence to link back to real activity. Those parts still feel simulated.
-- **Would they show it to a VP?** I’d show it as a concept to get feedback on the workflow, but not yet as a credible solution. The score weights and churn signals need to be backed by real data and validated against actual churn outcomes before I’d trust the ranking for decisions.
+- **Feels like a real product, or a mockup?** It feels like an interactive prototype, not just a static mockup. Search, risk filters, sorting, and account details work, and the account panel explains its sample signals and thresholds. But the page identifies its data as fictional, so it doesn’t yet feel like a working product connected to real customer accounts.
+- **Where interactivity fell short:** The main gap was the retention-plan flow. I clicked Generate retention plan, and it stayed on “Writing plan…” without showing a result during my review. The account details also felt mostly like a read-only panel: I could inspect the suggested action, but not assign it, record follow-up, or track an outcome.
+- **Would they show it to a VP?** I’d show it as a concept demo to get feedback on the direction. I wouldn’t yet present it as a credible, ready-to-use solution: the data is illustrative, and the plan-generation flow didn’t complete in my session. That leaves the central promise—turning risk signals into a usable retention action—unproven.
