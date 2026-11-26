@@ -20,14 +20,16 @@ _Tick the scenario you built in Lab 1 (the same one you selected in the lab guid
 ## The build
 
 - **What I built:** Build me a dashboard that shows why B2B SaaS customers churn in their first 90 days. Include a list of at-risk accounts ranked by a health score, and a chart of the top churn drivers.
-- **Tool used:** ChatGPT
-- **Shareable link:** https://chatgpt.com/library/share/libfile_2d29c92c308481918f8856644a015b05?account_id=personal
+- **Tool used:** Lovable.dev
+- **Shareable link:** https://acme-retention.lovable.app/
 
 ## Show & Swap read
 
 _What a partner understood from your build with no verbal setup, their reaction is your first piece of product evidence._
 
-- **What they understood immediately:** It’s a customer success dashboard for spotting B2B SaaS accounts that may churn in their first 90 days. It shows how common early churn is, what reasons appear most often, and which accounts may need attention first.
-- **What confused them:** I couldn’t tell how the health score is calculated or what signals affect it. The dashboard says 12 accounts are at risk, while the table shows only six at a time; I wasn’t sure whether the rest were on another page or excluded by the sample data. The chart’s “target” line also has no target value.
-- **The assumption they thought you were testing:** That early churn can be anticipated from measurable signals—such as slow onboarding, low adoption, missing integrations, and unresolved support issues—and that ranking accounts by health score helps customer success teams decide who to contact first.
-- **The gap between what you intended and what they read:** I intended this to be an early-warning tool that helps customer success teams understand why new customers churn and which accounts to contact first. The purpose came through, but the prototype didn’t explain how the health scores were calculated or resolve questions about the account count and trend target. The gap is that people could see what was happening, but didn’t yet know why to trust the ranking or what to do next.
+- **What they understood immediately:** It’s a customer success dashboard for spotting early churn risk during a customer’s first 90 days. It summarizes churn and onboarding, highlights accounts at risk, and suggests who to contact and what to do next.
+- **What confused them:** - The “Onboarding window” filter changes the cohort, but the churn metric stays labeled “90-day churn rate.” When I selected Days 1–30, it showed 5 churned out of 22 accounts. I wasn’t sure whether that meant churn within the first 30 days or eventual 90-day churn for that group.
+- The health scores and risk thresholds are only partly explained. I could see the score components and weights, but not how the component values become the final score or why the thresholds are set at 40 and 65.
+- The account details offer a recommended next step, but I couldn’t tell whether the dashboard supports acting on it, assigning follow-up, or tracking whether the action helped.
+- **The assumption they thought you were testing:** My guess: customer success teams will find a single view of early-churn signals useful if it connects cohort trends to a prioritized account list and a concrete next step. The prototype seems designed to test whether that makes it easier to decide which customer conversation to have next.
+- **The gap between what you intended and what they read:** I intended to show how customer success teams can spot early churn, understand where customers are struggling, and decide who to contact next. That purpose came through quickly: I recognized the risk dashboard and could find prioritized accounts with suggested actions. The gap was understanding and trust. I wasn’t sure what the “90-day churn rate” meant when I changed the onboarding window, or how the health signals produced an account’s score and risk level. The prototype communicates what to look at more clearly than why the numbers mean what they mean.
