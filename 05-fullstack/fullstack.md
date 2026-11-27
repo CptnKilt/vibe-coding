@@ -14,11 +14,6 @@ I tried creating multiple accounts with the same email address. The site would n
 
 ## Data schema
 
-| Entity | Key fields | Notes |
-|---|---|---|
-| _____ | _____ | _____ |
-| _____ | _____ | _____ |
-
 | Entity |	Key fields | Notes |
 |---|---|---|
 | profiles |	id, display_name, email, created_at |	One per account, created automatically at sign-up. You read your own; admins read all. Not editable from the app yet. |
