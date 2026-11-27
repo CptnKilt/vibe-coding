@@ -2,19 +2,21 @@
 
 > Module 6 · Evals & Iteration. Read the analytics, run an iteration sprint, present with evidence.
 
-## What the analytics say
+## What the evidence says
 
-_The numbers from real usage. Put the metric that matters on screen._
+_What real usage showed: numbers if your tool has analytics, counted behaviour if it does not. Put the signal that matters on screen._
 
-- **Primary metric:** _____
+- **Primary signal:** _____
 - **What moved:** _____
 - **What didn't:** _____
+
+_No usage evidence captured yet._
 
 ## Iteration sprint
 
 | Change | Hypothesis | Result |
 |---|---|---|
-| _____ | _____ | _____ |
+| B2B SaaS losing 30% of users in 90 days. Surface the churn drivers and test whether an intervention can move the curve. | We believe a guided week-one activation path that surfaces the core "aha" action will cause more new accounts reaching first value and staying past 90 days for new B2B SaaS accounts. We'll know we're right when week-one activation rises above 40% and 90-day churn drops. | _____ |
 
 ## Peer feedback
 
