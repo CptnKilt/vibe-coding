@@ -6,7 +6,11 @@
 
 _The working, shareable link that survives real users._
 
-_____
+https://acme-retention.lovable.app
+
+## Stress test results
+
+I tried creating multiple accounts with the same email address. The site would not let the additional user be created.
 
 ## Data schema
 
