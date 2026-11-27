@@ -134,7 +134,8 @@ Is "week one" enforced? The prototype shows a day marker but does not expire a r
 8. Outcome targets and due days (6 of 8 setup steps by day 14; 8 of 20 seats by day 14; a decision-maker at a review within 10 days) are invented. What are the real ones, and which systems supply them?
 9. Which plan does the real path share — the fixed templates, or the AI-written plan from the dashboard? If AI, who reviews it before a teammate is assigned work?
 10. How are teammates reached — email, in-app, chat — and can someone without an account claim a task?
-11. Who is the first user exactly? The quotes describe an ops lead and an engineering manager; the prototype is written for customer success. 12. Which one is being tested?
+11. Who is the first user exactly? The quotes describe an ops lead and an engineering manager; the prototype is written for customer success.
+12. Which one is being tested?
 13. Sign-in timing: the whole site is to sit behind sign-in. Does that apply to test sessions too, and does it change the first-session experience being tested?
 14. Do the three situations cover the real reasons new customers are at risk, and should each customer's own figures replace the fixed sample lines?
 15. Health score weights and risk bands are illustrative. Do they need validating before the customer picker ranks by them?
