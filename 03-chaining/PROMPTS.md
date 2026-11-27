@@ -37,11 +37,17 @@ One change: start the tally at zero and add runs only as someone completes the f
 
 ## Reusable techniques learned
 
-- Prompt One: I’d split it into two build prompts followed by a navigation prompt.
-- Promt Two: Tighten the scope and clean up the copy
+- Break multi-screen work into a clear build sequence.
+- Give each screen a specific user problem, purpose, and key content.
+- Specify the rules that govern status changes, such as when an account counts as activated.
+- Describe navigation with clear triggers and destinations.
+- Attach each visual reference to the screen it should guide, and name the qualities to follow.
+- Define loading, empty, and error states with exact copy and button behavior.
+- Label sample data clearly so users can distinguish it from real results.
+- Start prototype metrics at zero and update them only when a user completes the relevant action.
 
 ## What broke (and the fix)
 
 _Where a single mega-prompt failed and chaining fixed it._
 
-_____
+The assigning a task is what broke for me. There wasn't any tracking of it and any way to mark the task complete. I added a assigned task page. This will be attached to a sign in page that will show only the tasks that are assigned to a user. An admin will be able to see all assigned tasks.
