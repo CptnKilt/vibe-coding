@@ -10,7 +10,7 @@ _What real usage showed: numbers if your tool has analytics, counted behaviour i
 - **What moved:** _____
 - **What didn't:** _____
 
-_No usage evidence captured yet._
+_Analytics snapshot: visitors 18; page views 49; views per visit 3.67; duration 58s; bounce 10%._
 
 ## Iteration sprint
 
